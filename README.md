@@ -5,7 +5,8 @@ Built this unit control a ice maker to cool my K40 laser engraver.
 Found it to work very well.
 
 The comments out of the code.
-  June 30,2020 "Wanderingmoose Tinkering"
+/*
+   June 30,2020 "Wanderingmoose Tinkering"
    *****IceMaker K40 Chiller Controller ****
            ***** V 6.10 Final *****
              This version changed epprom from write to update to increase eeprom life****
@@ -16,7 +17,7 @@ The comments out of the code.
   Recommend makeing a script and loading into the Arduino to write the values needed, then loading this script. One is supplied below.
   Simple code to write the eeprom for the first time. ONLY NEED TO LOAD THIS SCRIPT ONCE IN THE ARDUINO to format the eeprom.
               ----------------------------------------------------------------------------------------
-   -----copy into new window and load into arduino. only takes seconds to achieve,  Then load the main program into the Arduino.-------
+  -----copy into new window and load into arduino. only takes seconds to achieve,  Then load the main program into the Arduino.-------
   #include <EEPROMex.h>
   #include "Arduino.h"
   void setup()
@@ -62,6 +63,8 @@ The comments out of the code.
   SoftwareSerial.h generic one in the interface
   OctaPentaVeega module can be found at https://github.com/rakettitiede/octapentaveega
   Built the B&W module for this project and have the information on the VGA monitor. Pretty slick.
+
+
            +5v
               |
              2k2
@@ -82,6 +85,11 @@ The comments out of the code.
                                   |
                                   |
                                 Ground
+
   Menu: All done with code in the main loop
   Set Temperature--> Set Temp--> Swing Set--> Comp Delay--> High Temp Alarm--> Low Temp Alarm--> Min Flow--> Door--> Buzzer--> Alarms--> EXIT
+
+
+
+*/
 
